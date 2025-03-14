@@ -5,6 +5,10 @@ const commonStyles = StyleSheet.create({
     marginLeft: 27,
   },
   marginRightMediuem: {marginRight: 17},
+
+  flexRow: {
+    flexDirection: 'row',
+  },
 });
 
 export default commonStyles;
