@@ -6,6 +6,7 @@ import StoriesSection from './components/stories-section';
 import {userStories} from './constants/dummy-data/user-stories';
 
 function App() {
+  
   return (
     <SafeAreaView>
       <View
