@@ -1,10 +1,16 @@
 import {StyleSheet} from 'react-native';
+import {
+  horizontalScale,
+  scaleFontSize,
+  verticalScale,
+} from '../../utils/scaling';
 
 const styles = StyleSheet.create({
   profileImageBorder: {
-    borderRadius: 1000,
+    borderRadius: scaleFontSize(1000),
     alignSelf: 'flex-start',
-    padding: 2,
+    paddingHorizontal: horizontalScale(2),
+    paddingVertical: verticalScale(2),
     borderWidth: 1,
     borderColor: '#F35BAC',
   },

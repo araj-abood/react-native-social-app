@@ -67,7 +67,7 @@ function StoriesSection({data}: StoriesSectionProps) {
         renderItem={handleRenderStory}
         keyExtractor={item => item.id.toString()}
         showsHorizontalScrollIndicator={false}
-        onEndReachedThreshold={0.5}
+        onEndReachedThreshold={1}
         onEndReached={handleLoadMore}
       />
     </View>

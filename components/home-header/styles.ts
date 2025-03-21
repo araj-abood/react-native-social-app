@@ -1,5 +1,10 @@
 import {StyleSheet} from 'react-native';
 import getFontFamily from '../../utils/get-font';
+import {
+  horizontalScale,
+  scaleFontSize,
+  verticalScale,
+} from '../../utils/scaling';
 
 const styles = StyleSheet.create({
   container: {
@@ -9,23 +14,23 @@ const styles = StyleSheet.create({
   },
   notificationContainer: {
     position: 'relative',
-    padding: 15,
-    borderRadius: 100,
+    padding: horizontalScale(15),
+    borderRadius: scaleFontSize(100),
     backgroundColor: '#e4e7eb',
   },
   notificationNumberContainer: {
     position: 'absolute',
-    top: -5,
-    right: -5,
-    width: 15,
-    height: 15,
-    borderRadius: 100,
+    top: verticalScale(-5),
+    right: horizontalScale(-5),
+    width: horizontalScale(15),
+    aspectRatio: '1/1',
+    borderRadius: scaleFontSize(100),
     alignItems: 'center',
     backgroundColor: '#f35BAC',
   },
   notifcationNumber: {
     color: '#FFF',
-    fontSize: 10,
+    fontSize: scaleFontSize(10),
     fontFamily: getFontFamily(undefined, '600'),
   },
   iconAndNumberContainer: {

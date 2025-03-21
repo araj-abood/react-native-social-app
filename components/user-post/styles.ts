@@ -1,10 +1,16 @@
 import {StyleSheet} from 'react-native';
 import getFontFamily from '../../utils/get-font';
+import {
+  horizontalScale,
+  scaleFontSize,
+  verticalScale,
+} from '../../utils/scaling';
 
 const styles = StyleSheet.create({
   postContainer: {
-    marginVertical: 12,
-    paddingBottom: 24,
+    marginVertical: verticalScale(12),
+    marginHorizontal: horizontalScale(24),
+    paddingBottom: verticalScale(24),
     borderBottomColor: '#adadad',
     borderBottomWidth: 1,
   },
@@ -19,33 +25,33 @@ const styles = StyleSheet.create({
   },
   postUsername: {
     fontFamily: getFontFamily(undefined, '700'),
-    fontSize: 16,
+    fontSize: scaleFontSize(16),
   },
   postNameContainer: {
-    marginLeft: 12,
+    marginLeft: horizontalScale(12),
   },
   postLocation: {
     fontFamily: getFontFamily(undefined, '400'),
-    fontSize: 14,
+    fontSize: scaleFontSize(14),
     color: '#616161',
   },
   postImageContainer: {
-    marginTop: 12,
+    marginTop: verticalScale(12),
     overflow: 'hidden',
-    borderRadius: 10,
+    borderRadius: scaleFontSize(10),
   },
   postImage: {
     width: '100%',
   },
   postFooter: {
-    marginTop: 12,
+    marginTop: verticalScale(12),
     flexDirection: 'row',
-    gap: 19,
+    gap: horizontalScale(19),
   },
   footerIconTextContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 4,
+    gap: horizontalScale(4),
   },
   footerText: {
     fontFamily: getFontFamily(undefined, '500'),

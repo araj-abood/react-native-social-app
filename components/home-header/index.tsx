@@ -3,6 +3,7 @@ import Title from '../title';
 import styles from './styles';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import {horizontalScale} from '../../utils/scaling';
 
 function HomeHeader() {
   return (
@@ -10,7 +11,11 @@ function HomeHeader() {
       <Title text="Let's Explore" />
       <TouchableOpacity style={styles.notificationContainer}>
         <View style={styles.iconAndNumberContainer}>
-          <FontAwesomeIcon icon={faEnvelope} color="#898DAE" size={20} />
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            color="#898DAE"
+            size={horizontalScale(20)}
+          />
           <View style={styles.notificationNumberContainer}>
             <Text style={styles.notifcationNumber}>2</Text>
           </View>
