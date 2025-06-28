@@ -2,6 +2,7 @@ import {StyleSheet} from 'react-native';
 import {horizontalScale} from '../utils/scaling';
 
 const commonStyles = StyleSheet.create({
+  backgroundWhite: {backgroundColor: `#FFFFFF`},
   marginLeftLarge: {
     marginLeft: horizontalScale(27),
   },
@@ -12,6 +13,12 @@ const commonStyles = StyleSheet.create({
 
   flexRow: {
     flexDirection: 'row',
+  },
+  flexGrow: {
+    flexGrow: 1,
+  },
+  flexOne: {
+    flex: 1,
   },
 });
 

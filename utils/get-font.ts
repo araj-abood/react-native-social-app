@@ -1,6 +1,8 @@
 import {FontWeights} from '../types/get-font-types';
 
-function getFontFamily(baseFont = 'Inter', weight: FontWeights) {
+type FontsNames = 'Inter';
+
+function getFontFamily(baseFont: FontsNames = 'Inter', weight: FontWeights) {
   let font = `${baseFont}_18pt`;
   switch (weight) {
     case '100':

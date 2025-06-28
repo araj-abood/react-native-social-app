@@ -10,7 +10,7 @@ function HomeHeader() {
     <View style={styles.container}>
       <Title text="Let's Explore" />
       <TouchableOpacity style={styles.notificationContainer}>
-        <View style={styles.iconAndNumberContainer}>
+        <TouchableOpacity style={styles.iconAndNumberContainer}>
           <FontAwesomeIcon
             icon={faEnvelope}
             color="#898DAE"
@@ -19,7 +19,7 @@ function HomeHeader() {
           <View style={styles.notificationNumberContainer}>
             <Text style={styles.notifcationNumber}>2</Text>
           </View>
-        </View>
+        </TouchableOpacity>
       </TouchableOpacity>
     </View>
   );
